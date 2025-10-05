@@ -11,10 +11,10 @@
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
     <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class=" m-0 p-0 " style="font-family: 'PT Serif', 'serif'; ">
+<body>
     <section id="home">
         <!-- Menu button -->
-        <div class="bg-cover bg-center overflow-hidden w-full h-screen" style="background-image: url(images/background-main.jpg);">
+        <div class="bg-cover bg-center overflow-hidden w-full h-screen" style="background-image: url(images/background-main.webp);">
         <!-- header -->
         <header class="flex flex-wrap justify-center items-center py-6 px-4 space-x-8" id="header"> 
             <div class="md:hidden" id="menu-btn"><i class="material-symbols-outlined">menu</i></div>
@@ -48,7 +48,7 @@
             <!-- sign in button -->
             <a href="#" class="bg-green-900/80 rounded-lg p-3" id="sig-in-btn"><i class="material-symbols-outlined">login</i> Sign In</a>
         </header>
-            <div class="lg:text-5xl md:text-4xl sm:text-3xl flex justify-center mb-0 pt-80 font-extrabold" id="subtitle">
+            <div class="lg:text-5xl md:text-4xl text-3xl flex font-bold" id="subtitle">
                 <h1>Drive more, worry less - convenient car rentals</h1>
             </div>
         </div>
@@ -56,159 +56,164 @@
 
     <!-- rental section -->
     <section id="rental">
-        <div class="p-6" id="top-vehicle">
-            <h1 class="text-3xl font-bold pl-5">Top Vehicles this Month</h1>
-        </div>
-        <div class="grid grid-cols-3 gap-x-0.5 gap-y-0.2 px-20">
-            <div class="border-1 p-4 border-green-900 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center font-semibold text-2xl pb-5">Ferrari F8 Tributo 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/ferrari-f8-tributo.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA $120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Tesla Model S 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/Tesla Model S.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Chevrolet Camaro 2024</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/chevrolet camaro 2025.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-sm items-center text-red-600 line-through">
-                    CA <span class="material-symbols-outlined text-sm">attach_money</span>120 / day</h3>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>100 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Chevrolet Corvette 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/chevrolet corvette 2025.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Ford Mustang 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/ford mustang 2025.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-sm items-center text-red-600 line-through">
-                    CA <span class="material-symbols-outlined text-red-500 text-sm">attach_money</span>120 / day</h3>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined ">attach_money</span>100 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Toyota Rav4 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/toyota rav4 2025.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Toyota Corolla 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/Toyota Corolla.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Honda Civic 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/Honda Civic.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
-            <div class="border-1 p-4 border-green-700 rounded-xl flex flex-col cursor-pointer transition-transform duration-300 hover:scale-95 transform scale-90">
-                <a href="" class="">
-                <h2 class="text-center text-2xl pb-5">Hyundai Elantra 2025</h2>
-                <img class="rounded-lg pb-5 w-full h-40 object-cover" src="images/cars/Hyundai Elantra.jpg" alt="">
-                <div class="grid grid-cols-2 pb-4 px-4 text-base">
-                    <h3 class="flex items-center"><i class="material-symbols-outlined">airline_seat_recline_extra</i> 2 Seats</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">airport_shuttle</span> 2 Doors</h3>
-                    <h3 class="flex items-center"><span class="material-symbols-outlined">auto_transmission</span> Automatic</h3>
-                    <h3 class="col-span-1 flex items-center"><span class="material-symbols-outlined">local_gas_station</span> Gas (Premium)</h3>  
-                </div>
-                </a>
-                <h3 class="flex flex-wrap justify-end text-lg items-center">
-                    CA <span class="material-symbols-outlined">attach_money</span>120 / day</h3>
-                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
-                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
-            </div>
+        <h1 class="flex justify-center text-3xl font-bold my-5">Top Vehicles this Month</h1>
+        <div class="m-4 md:m-20 bg-gray-200 grid py-8 rounded-2xl md:grid-cols-3 gap-x-0.5 gap-y-0.2 md:px-10" id="top-vehicle">
             
+            <!-- <div class="grid md:grid-cols-3 gap-x-0.5 gap-y-0.2 md:px-20">
+            </div> -->
+            <!-- <a href="" class=""> -->
+                    <!-- <div class="border-1 border-green-900 rounded-xl md:flex md:flex-col md:cursor-pointer md:transition-transform duration-300 hover:scale-95 md:transform md:scale-90"> -->
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/ferrari-f8-tributo.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Ferrari F8 Tributo (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/Tesla Model S.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Tesla Model S (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+                <!-- <a href="#" class="bg-green-700 rounded-xl p-2 text-white text-lg hover:bg-green-900 hover:border-green-700 hover:" id="details-btn"> Details</a> -->
+                <!-- <p class="text-lg">The Ferrari F8 Tributo is the new mid-rear-engined sports car that represents the highest expression of the Prancing Horse’s classic two-seater berlinetta. It is a car with unique characteristics and, as its name implies, is an homage to the most powerful V8 in Ferrari history.</p> -->
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/chevrolet camaro 2025.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Chevrolet Camaro (2024)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/chevrolet corvette 2025.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Chevrolet Corvette (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/ford mustang 2025.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Ford Mustang (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/toyota rav4 2025.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Toyota Rav4 (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <img class=" w-full h-auto object-cover" src="images/cars/Toyota Corolla.webp" alt="">
+                <h2 class="font-semibold text-xl my-3 ml-5"> Toyota Corolla (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <div class="w-full h-xl overflow-hidden">
+                    <img class="w-full h-full object-cover" src="images/cars/Honda Civic.webp" alt="">
+                </div>
+                <h2 class="font-semibold text-xl my-3 ml-5"> Honda Civic (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>
+           
+            <div class="bg-white border-gray-200 rounded-2xl shadow-lg overflow-hidden mx-3 mt-7">
+                <div class="w-full h-xl overflow-hidden">
+                    <img class="w-full h-full object-cover" src="images/cars/Hyundai Elantra.webp" alt="">
+                </div>
+                <h2 class="font-semibold text-xl my-3 ml-5"> Hyundai Elantra (2025)</h2>
+                <div class="grid grid-cols-2 gap-y-4 mb-4 mt-4 mx-8  text-md">
+                    <h3 class="flex items-center "><i class="material-symbols-outlined mr-2">airline_seat_recline_extra</i> 2 People</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">airport_shuttle </i> 2 Doors</h3>
+                    <h3 class="flex items-center"><i class="material-symbols-outlined mr-2">auto_transmission</i> Automatic</h3>
+                    <h3 class="col-span-1 flex items-center"><i class="material-symbols-outlined mr-2">local_gas_station</i> Premium</h3>  
+                </div>
+                <!-- </a> -->
+                <hr class="border border-gray-500 mx-6">
+                <div class="flex justify-center items-center mt-8">
+                    <h3 class="text-left mx-5 mb-5 text-lg">$120 /day</h3>
+                    <a href="#" class="bg-gray-200/80 p-3  px-4 mb-3 text-black flex items-center"> View Details <span class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+            </div>            
     </section>
 
     <!-- about section -->
